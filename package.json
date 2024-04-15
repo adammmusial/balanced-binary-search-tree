@@ -1,0 +1,15 @@
+{
+  "name": "balanced-binary-search-tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adammmusial/balanced-binary-search-tree.git",
+  "author": "adammmusial <musialadam83@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "release": "standard-version"
+  }
+}
