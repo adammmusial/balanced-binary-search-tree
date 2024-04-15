@@ -7,6 +7,7 @@ export default class Tree {
 
     buildTree(array, start, end) {
         sortArr = this.sortArray(array)
+        
     }
 
     sortedArrayToBST(arr, start, end) {
@@ -23,5 +24,10 @@ export default class Tree {
     sortArray(array) {
         sortedArray = array.sort(sort((a, b) => a - b))
         return sortedArray
+    }
+
+    removeDuplicates(array) {
+        filteredArray = array.filter((item, index) => array.indexOf(item) === index)
+        return filteredArray;
     }
 }
