@@ -6,4 +6,9 @@ export default class Tree {
     }
 
     buildTree(){}
+
+    sortArray(array){
+        sortedArray = array.sort(sort((a, b) => a - b))
+        return sortedArray
+    }
 }
