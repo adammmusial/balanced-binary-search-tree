@@ -5,9 +5,12 @@ export default class Tree {
         this.array = this.buildTree(array)
     }
 
-    buildTree(array, start, end) {
-        sortArr = this.sortArray(array)
-        
+    buildTree(array) {
+        const sortArr = this.sortArray(array)
+        const uniqueValuesArray = this.removeDuplicates(sortArr)
+        const n = uniqueValuesArray.length;
+        const root = sortedArrayToBST(uniqueValuesArray, 0, n-1)
+        return root        
     }
 
     sortedArrayToBST(arr, start, end) {
@@ -22,12 +25,12 @@ export default class Tree {
       }
 
     sortArray(array) {
-        sortedArray = array.sort(sort((a, b) => a - b))
+        const sortedArray = array.sort(sort((a, b) => a - b))
         return sortedArray
     }
 
     removeDuplicates(array) {
-        filteredArray = array.filter((item, index) => array.indexOf(item) === index)
+        const filteredArray = array.filter((item, index) => array.indexOf(item) === index)
         return filteredArray;
     }
 }
