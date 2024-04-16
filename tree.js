@@ -46,6 +46,18 @@ export default class Tree {
         return node
     }
 
+    minValue(node){
+        let minV = node.data
+        console.log(minV)
+        while (node !== null){
+            minV = node.left.data
+            console.log(minV)
+            node = node.left
+            console.log(node)
+        }
+        return minV
+    }
+
 
 
     

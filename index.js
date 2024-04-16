@@ -35,3 +35,4 @@ const tree = new Tree(createRandomArray(7)); // Create a binary search tree from
 
 console.log(tree)
 prettyPrint(tree.array);
+console.log(tree.minValue());
