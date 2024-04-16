@@ -1,4 +1,4 @@
-import Tree from "./tree.js";
+import {Tree} from "./tree.js";
 
 
 const prettyPrint = (node, prefix = "", isLeft = true) => {
@@ -34,5 +34,5 @@ function addNumbers(n){
 const tree = new Tree(createRandomArray(7)); // Create a binary search tree from an array of 7 random numbers.
 
 console.log(tree)
-prettyPrint(tree.array);
-console.log(tree.minValue());
+console.log(prettyPrint(tree.root))
+console.log(tree.levelOrder())
