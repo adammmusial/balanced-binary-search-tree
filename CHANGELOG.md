@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.3.0...v1.4.0) (2024-04-16)
+
+
+### Features
+
+* add levelOrder() method to perform Level-order travelsar ([0fcf4aa](https://github.com/adammmusial/balanced-binary-search-tree/commit/0fcf4aa7dd1905250ed8296421752a0e1fcc76c5))
+* implement tests ([62c720b](https://github.com/adammmusial/balanced-binary-search-tree/commit/62c720b11ec62e1b1ff688fc154ed98d74b2b962))
+
+
+### Bug Fixes
+
+* adjust export code ([3448f6e](https://github.com/adammmusial/balanced-binary-search-tree/commit/3448f6ef5ce7e2e4ef3e4bb11077346394032785))
+
 ## [1.3.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.2.0...v1.3.0) (2024-04-16)
 
 
