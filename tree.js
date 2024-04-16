@@ -34,15 +34,19 @@ export default class Tree {
         return filteredArray;
     }
 
-    insert(data, node = this.root) {
-        if (node == null) {
-          node = new Node(data);
-          return node;
+    insert(data, root = this.root) {
+        if (node == null){
+            node = new Node(data)
+            return node
         }
-    
-        if (data < node.data) node.left = this.insert(data, node.left);
-        else if (data > node.data) node.right = this.insert(data, node.right);
-        return node;
-      }
+
+        if (data>root.right) node.right = this.insert(data, node.right)
+        else if (data<root.left) node.left = this.insert(data, node.left)
+
+        return node
+    }
+
+
+
     
 }
