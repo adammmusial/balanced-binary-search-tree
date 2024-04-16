@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.2.0...v1.3.0) (2024-04-16)
+
+
+### Features
+
+* add inser method to inser values to BST ([faada2b](https://github.com/adammmusial/balanced-binary-search-tree/commit/faada2bd6306a703823837d09a51a522fe6bb005))
+* add minValue and delete methods to delete given data ([56871aa](https://github.com/adammmusial/balanced-binary-search-tree/commit/56871aa851126536be9c71cc90798bce74f70be1))
+* add test commands as well as prettyPrint() function to print BST ([dc9314f](https://github.com/adammmusial/balanced-binary-search-tree/commit/dc9314fde81e9edf06e61533aca8f5b5ac266e7e))
+* change to modules ([67c5f66](https://github.com/adammmusial/balanced-binary-search-tree/commit/67c5f6645c75be22216af88b4ca3d047e7c22884))
+
+
+### Bug Fixes
+
+* fix bugs connected with wrong function calling ([43b72b4](https://github.com/adammmusial/balanced-binary-search-tree/commit/43b72b422ca72ed2d13281da04c46747b93cc194))
+
 ## [1.2.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.1.0...v1.2.0) (2024-04-15)
 
 
