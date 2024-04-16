@@ -1,4 +1,4 @@
-import Node from "./node";
+import Node from "./node.js";
 
 export default class Tree {
     constructor(array) {
@@ -9,7 +9,7 @@ export default class Tree {
         const sortArr = this.sortArray(array)
         const uniqueValuesArray = this.removeDuplicates(sortArr)
         const n = uniqueValuesArray.length;
-        const root = sortedArrayToBST(uniqueValuesArray, 0, n-1)
+        const root = this.sortedArrayToBST(uniqueValuesArray, 0, n-1)
         return root        
     }
 
@@ -25,7 +25,7 @@ export default class Tree {
       }
 
     sortArray(array) {
-        const sortedArray = array.sort(sort((a, b) => a - b))
+        const sortedArray = array.sort((a, b) => a - b)
         return sortedArray
     }
 
@@ -33,4 +33,16 @@ export default class Tree {
         const filteredArray = array.filter((item, index) => array.indexOf(item) === index)
         return filteredArray;
     }
+
+    insert(data, node = this.root) {
+        if (node == null) {
+          node = new Node(data);
+          return node;
+        }
+    
+        if (data < node.data) node.left = this.insert(data, node.left);
+        else if (data > node.data) node.right = this.insert(data, node.right);
+        return node;
+      }
+    
 }
