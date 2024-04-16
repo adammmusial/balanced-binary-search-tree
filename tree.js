@@ -103,7 +103,21 @@ class Tree {
     }
 
     toArray(arr, value) {
-        arr.push(value);
+        return arr.push(value);
+      }
+
+    inorder() {
+        this.inorderTransversed = [];
+        return this.recInorder();
+      }
+    
+    recInorder(func = this.toArray, node = this.root) {
+        if (node === null) return;
+        this.recInorder(func, node.left)
+        func(this.inorderTransversed, node.data);
+        this.recInorder(func, node.right);
+        return this.inorderTransversed;
+        
       }
 
 

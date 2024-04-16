@@ -35,4 +35,4 @@ const tree = new Tree(createRandomArray(7)); // Create a binary search tree from
 
 console.log(tree)
 console.log(prettyPrint(tree.root))
-console.log(tree.levelOrder())
+console.log(tree.inorder())
