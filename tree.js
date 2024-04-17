@@ -138,6 +138,19 @@ class Tree {
 
     }
 
+    postOrder(){
+        this.postorderTransversed = []
+        return recPostorder()
+    }
+
+    recPostorder(func = this.toArray, node = this.root){
+        if (node = null )return ;
+        this.recPreorder(func, node.left)
+        this.recPreorder(func, node.right)
+        func(this.postorderTransversed,node.data)
+        return this.postorderTransversed
+    }
+
 }
 
 
