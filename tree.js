@@ -176,6 +176,11 @@ class Tree {
         }
         return true;
       }
+    
+    rebalance() {
+        const currentTreeArray = this.inorder();
+        this.root = this.buildTree(currentTreeArray);
+      }
 
 }
 
