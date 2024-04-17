@@ -4,6 +4,9 @@ class Tree {
     constructor(array) {
         this.root = this.buildTree(array);
         this.levelOrderTransversed = [];
+        this.inorderTransversed = [];
+        this.preorderTransversed = [];
+        this.postorderTransversed = []
     }
 
     buildTree(array) {
@@ -120,6 +123,20 @@ class Tree {
         
       }
 
+    preOrder(){
+        this.preorderTransversed = []
+        return this.recPreorder()
+    }
+
+    recPreorder(func = this.toArray, node = this.root) {
+
+        if (node == null) return;
+        func(this.preorderTransversed,node.data)
+        this.recPreorder(func, node.left)
+        this.recPreorder(func, node.right)
+        return this.preorderTransversed
+
+    }
 
 }
 
