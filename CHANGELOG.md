@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.5.0...v1.6.0) (2024-04-17)
+
+
+### Features
+
+* add depth() method returning depth of given node ([a4fc790](https://github.com/adammmusial/balanced-binary-search-tree/commit/a4fc790a63531add29ab8370962dfd6336963e3b))
+* add depth() method to return depth of given node ([ee1282d](https://github.com/adammmusial/balanced-binary-search-tree/commit/ee1282d79c4e31d2a5e3ca0c110a8e3165f464e1))
+* add height() method to calculate height of the tree ([a94da63](https://github.com/adammmusial/balanced-binary-search-tree/commit/a94da631fb2f03d8642cdc26d9158bdfd1bbd27c))
+* add isBalanced() method to check if tree is balanced ([45a2e26](https://github.com/adammmusial/balanced-binary-search-tree/commit/45a2e26fbe205f8ec5937d3361851851032831ec))
+* add rebalance() method to rebalance a tree ([3588c82](https://github.com/adammmusial/balanced-binary-search-tree/commit/3588c82ba6cca9b95c10838b8383b4ef79e5b666))
+
 ## [1.5.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.4.0...v1.5.0) (2024-04-17)
 
 
