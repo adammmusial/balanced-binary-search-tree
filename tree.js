@@ -38,7 +38,7 @@ class Tree {
         return filteredArray;
     }
 
-    insert(data, root = this.root) {
+    insert(data, node = this.root) {
         if (node == null){
             node = new Node(data)
             return node
@@ -69,12 +69,9 @@ class Tree {
 
     minValue(node){
         let minV = node.data
-        console.log(minV)
         while (node !== null){
             minV = node.left.data
-            console.log(minV)
             node = node.left.data
-            console.log(node)
         }
         return minV
     }
@@ -140,7 +137,7 @@ class Tree {
 
     postOrder(){
         this.postorderTransversed = []
-        return recPostorder()
+        return this.recPostorder()
     }
 
     recPostorder(func = this.toArray, node = this.root){
