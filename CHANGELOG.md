@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.6.0...v1.7.0) (2024-04-17)
+
+
+### Features
+
+* add tests ([2d58a59](https://github.com/adammmusial/balanced-binary-search-tree/commit/2d58a59d001ac5fa5e2bd7bce389a2e736cfba99))
+
+
+### Bug Fixes
+
+* fix other typos ([f5e5294](https://github.com/adammmusial/balanced-binary-search-tree/commit/f5e52943763f56a3133ac509e21b5e0116975375))
+* fix typos ([e9dd6e1](https://github.com/adammmusial/balanced-binary-search-tree/commit/e9dd6e175be6c918d5138bcc59fc5c9a7c044b04))
+
 ## [1.6.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.5.0...v1.6.0) (2024-04-17)
 
 
