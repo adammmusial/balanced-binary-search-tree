@@ -163,7 +163,18 @@ class Tree {
         if (node.data === data.data) return 0;
         if (data.data < node.data) return this.depth(data, node.left) + 1;
         if (data.data > node.data) return this.depth(data, node.right) + 1;
-        
+
+      }
+
+    isBalanced() {
+        const allNodes = this.inorder();
+        for (let i = 0; i < allNodes.length; i++) {
+          const node = this.find(allNodes[i]);
+          const leftSubtree = this.height(node.left);
+          const rightSubtree = this.height(node.right);
+          if (Math.abs(leftSubtree - rightSubtree) > 1) return false;
+        }
+        return true;
       }
 
 }
