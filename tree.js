@@ -44,8 +44,8 @@ class Tree {
             return node
         }
 
-        if (data>root.right) node.right = this.insert(data, node.right)
-        else if (data<root.left) node.left = this.insert(data, node.left)
+        if (data>node.right) node.right = this.insert(data, node.right)
+        else if (data<node.left) node.left = this.insert(data, node.left)
 
         return node
     }
