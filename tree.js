@@ -144,11 +144,19 @@ class Tree {
     }
 
     recPostorder(func = this.toArray, node = this.root){
-        if (node = null )return ;
+        if (node == null )return ;
         this.recPreorder(func, node.left)
         this.recPreorder(func, node.right)
         func(this.postorderTransversed,node.data)
         return this.postorderTransversed
+    }
+
+    height(node){
+        if (node == null) return 0; 
+        const leftHeight = this.height(this.left)
+        const rightHeight = this.height (this.right)
+        const nodeHeight = Math.max(leftHeight, rightHeight) + 1;
+        return nodeHeight;
     }
 
 }
