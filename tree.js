@@ -163,6 +163,7 @@ class Tree {
         if (node.data === data.data) return 0;
         if (data.data < node.data) return this.depth(data, node.left) + 1;
         if (data.data > node.data) return this.depth(data, node.right) + 1;
+        
       }
 
 }
