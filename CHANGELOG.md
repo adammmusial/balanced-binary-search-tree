@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.4.0...v1.5.0) (2024-04-17)
+
+
+### Features
+
+* implement inOrder() traversal ([dc5b0ff](https://github.com/adammmusial/balanced-binary-search-tree/commit/dc5b0ff2df5bf702d81ace944d9f71ce35e41c54))
+* implement postOrder traversal ([d189e6b](https://github.com/adammmusial/balanced-binary-search-tree/commit/d189e6b592506058e1c46cf314951ad9060a006b))
+* implement preorder traversal ([de84aa1](https://github.com/adammmusial/balanced-binary-search-tree/commit/de84aa198cbcd8ad38c7ca05c4cd8d4a8fb7f917))
+
 ## [1.4.0](https://github.com/adammmusial/balanced-binary-search-tree/compare/v1.3.0...v1.4.0) (2024-04-16)
 
 
